@@ -14,6 +14,7 @@
 		282A38C82208556300EA1D88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 282A38C62208556300EA1D88 /* LaunchScreen.storyboard */; };
 		282A38D32208556400EA1D88 /* image_preprocessing_exampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282A38D22208556400EA1D88 /* image_preprocessing_exampleTests.swift */; };
 		282A38DE2208556400EA1D88 /* image_preprocessing_exampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282A38DD2208556400EA1D88 /* image_preprocessing_exampleUITests.swift */; };
+		A07E4742B51B317FD5C8FC1B /* Pods_image_preprocessing_example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8DD6621A6E53140CCC66111 /* Pods_image_preprocessing_example.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,9 @@
 		282A38D92208556400EA1D88 /* image_preprocessing_exampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = image_preprocessing_exampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		282A38DD2208556400EA1D88 /* image_preprocessing_exampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = image_preprocessing_exampleUITests.swift; sourceTree = "<group>"; };
 		282A38DF2208556400EA1D88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37B01AFB4CDD2D86638CA6F9 /* Pods-image_preprocessing_example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-image_preprocessing_example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-image_preprocessing_example/Pods-image_preprocessing_example.debug.xcconfig"; sourceTree = "<group>"; };
+		A8DD6621A6E53140CCC66111 /* Pods_image_preprocessing_example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_image_preprocessing_example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F05FE1701B288B8742C4F1D0 /* Pods-image_preprocessing_example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-image_preprocessing_example.release.xcconfig"; path = "Pods/Target Support Files/Pods-image_preprocessing_example/Pods-image_preprocessing_example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A07E4742B51B317FD5C8FC1B /* Pods_image_preprocessing_example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +86,8 @@
 				282A38D12208556400EA1D88 /* image_preprocessing_exampleTests */,
 				282A38DC2208556400EA1D88 /* image_preprocessing_exampleUITests */,
 				282A38BB2208556000EA1D88 /* Products */,
+				42619916E1F9EEFD45449BFA /* Pods */,
+				54926AA0B22B019C6ECA83D0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +132,23 @@
 			path = image_preprocessing_exampleUITests;
 			sourceTree = "<group>";
 		};
+		42619916E1F9EEFD45449BFA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				37B01AFB4CDD2D86638CA6F9 /* Pods-image_preprocessing_example.debug.xcconfig */,
+				F05FE1701B288B8742C4F1D0 /* Pods-image_preprocessing_example.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		54926AA0B22B019C6ECA83D0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A8DD6621A6E53140CCC66111 /* Pods_image_preprocessing_example.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +156,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 282A38E22208556400EA1D88 /* Build configuration list for PBXNativeTarget "image_preprocessing_example" */;
 			buildPhases = (
+				A01849977C9E4205AB912EDD /* [CP] Check Pods Manifest.lock */,
 				282A38B62208556000EA1D88 /* Sources */,
 				282A38B72208556000EA1D88 /* Frameworks */,
 				282A38B82208556000EA1D88 /* Resources */,
+				688AB60B2F51A7FF765E2A0D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -250,6 +276,47 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		688AB60B2F51A7FF765E2A0D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-image_preprocessing_example/Pods-image_preprocessing_example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Socket.IO-Client-Swift/SocketIO.framework",
+				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketIO.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-image_preprocessing_example/Pods-image_preprocessing_example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A01849977C9E4205AB912EDD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-image_preprocessing_example-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		282A38B62208556000EA1D88 /* Sources */ = {
@@ -428,15 +495,17 @@
 		};
 		282A38E32208556400EA1D88 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37B01AFB4CDD2D86638CA6F9 /* Pods-image_preprocessing_example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6H49AR6Z4M;
 				INFOPLIST_FILE = image_preprocessing_example/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "weye.image-preprocessing-example";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.image-processing.Identifier";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -445,15 +514,17 @@
 		};
 		282A38E42208556400EA1D88 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F05FE1701B288B8742C4F1D0 /* Pods-image_preprocessing_example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6H49AR6Z4M;
 				INFOPLIST_FILE = image_preprocessing_example/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "weye.image-preprocessing-example";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.image-processing.Identifier";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
