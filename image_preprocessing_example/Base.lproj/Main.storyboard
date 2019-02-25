@@ -25,46 +25,46 @@
                                     <navigationItem title="Weye ios Test" id="MXE-KS-GR2">
                                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="RJd-DU-lL4">
                                             <connections>
-                                                <action selector="addAction:" destination="BYZ-38-t0r" id="y6c-js-YqI"/>
+                                                <action selector="addAction:" destination="BYZ-38-t0r" id="hBJ-Qc-x81"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bNt-0W-q1s">
-                                <rect key="frame" x="0.0" y="156" width="375" height="293"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uaK-yL-Mz4">
-                                <rect key="frame" x="42" y="470" width="114" height="62"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="connect"/>
-                                <connections>
-                                    <action selector="connect:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vZR-Bd-vkC"/>
-                                </connections>
-                            </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="result" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="SAt-Dw-lff">
-                                <rect key="frame" x="69" y="550" width="265" height="108"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Result" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="JuX-39-egu">
+                                <rect key="frame" x="23" y="586" width="329" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XFZ-Qd-LId">
-                                <rect key="frame" x="218" y="486" width="96" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RJW-Y3-JPK">
+                                <rect key="frame" x="272" y="627" width="87" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="emit message"/>
+                                <state key="normal" title="camera start"/>
                                 <connections>
-                                    <action selector="message:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7aW-He-GB0"/>
+                                    <action selector="cameraStartButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Rm-BS-sX8"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tyi-bn-Rom">
+                                <rect key="frame" x="16" y="627" width="103" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="server connect"/>
+                                <connections>
+                                    <action selector="serverConnect:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RIC-ab-pOR"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aOc-Pl-eG2">
+                                <rect key="frame" x="23" y="575" width="99" height="92"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="imageVIew" destination="bNt-0W-q1s" id="Ek7-Yh-KOU"/>
-                        <outlet property="result" destination="SAt-Dw-lff" id="khf-Vv-Ggy"/>
+                        <outlet property="Result" destination="JuX-39-egu" id="FLf-1V-7O9"/>
+                        <outlet property="testImage" destination="aOc-Pl-eG2" id="Qs1-g7-fPl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
